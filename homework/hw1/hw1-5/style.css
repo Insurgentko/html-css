@@ -1,0 +1,23 @@
+body{
+    background-image: url("https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/a14fb13a-1d49-41c3-82ec-3a42c346cb67/e115ecc5-c39a-4624-95b7-5e41d8a00b24?host=wbd-images.prod-vod.h264.io&partner=beamcom");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.actor-section{
+    padding: 10px;
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(28, 100, 159, 0.78);
+    font-size: 20px;
+}
+img{
+    margin: 35px;
+    width: 150px;
+    height: 150px;
+}
+h1{
+    text-align: center;
+}
