@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            height: 100vh;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            background: #d95d5d;
+            background: linear-gradient(90deg, rgba(217, 93, 93, 1) 0%, rgba(237, 221, 83, 1) 89%);
+            box-shadow: 5px 5px 15px 5px #000000;
+            border-radius: 50%;
+            border: 3px solid blue;
+            transition: 500ms;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .item a{
+            text-decoration: none;
+            color: white;
+        }
+        .item:hover{
+            border-radius: 10%;
+            border: 3px solid #d95d5d;
+            transition: 500ms;
+            transform: scale(1.1);
+        }
+        .item:hover a{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"><a href="#">link</a></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"><a href="#">link</a></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>

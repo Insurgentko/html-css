@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            height: 800px;
+        }
+        .box-container{
+            height: 100%;
+            background-color: darkblue;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+            flex-direction: column;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            /*margin: 0 10px;*/
+
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .green{
+            background-color: green;
+        }
+        .red{
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .red img{
+            width: 50%;
+        }
+        .red p{
+            /*text-align: center;*/
+        }
+        .purple{
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+<div class="box-container">
+    <div class="box yellow">
+
+    </div>
+    <div class="box green"></div>
+    <div class="box red">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <img src="https://www.freeiconspng.com/uploads/banana-png-32.png" alt="banana">
+    </div>
+    <div class="box purple"></div>
+</div>
+</body>
+</html>
