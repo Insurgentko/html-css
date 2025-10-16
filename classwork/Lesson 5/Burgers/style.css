@@ -51,7 +51,6 @@ ul a {
     line-height: 96.896%; /* 17.441px */
     text-transform: uppercase;
 }
-
 .three-burgers-title {
     margin: 74px auto 33px auto;
     width: 1255px;
@@ -68,4 +67,5 @@ ul a {
 .three-burgers-photo {
     display: block;
     margin: 0 auto;
+
 }

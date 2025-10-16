@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FavBet Preloader</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        main{
+            background: #090a18;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        main img{
+            height: 100px;
+            width: 100px;
+            animation: preloader 1s linear infinite alternate;
+        }
+        @keyframes preloader{
+            from{
+                transform: scale(1);
+            }
+            to{
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <img src="favbet-preloader.png" alt="load">
+</main>
+</body>
+</html>
