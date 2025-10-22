@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Псевдоклассы и псевдоелементы-->
+    <title>Document</title>
+    <style>
+        div :first-child{
+            color: red;
+        /*Обращение по псевдоклассу к первому дочернему элементу*/
+        }
+        div p::first-letter{
+            color: blue;
+            font-size: 30px;
+        /*Псевдоэлемент обозначается двумя двоеточиями*/
+        }
+        /*div p::first-line{*/
+        /*    color: purple;*/
+        /*!*стиль только первой строки*!*/
+        /*}*/
+        div :last-child{
+            color: gold;
+        /*последний дочерний элемент*/
+        }
+        div p:last-of-type{
+            color: gold;
+        /*последний элемент конкретного типа*/
+        }
+        ul li:nth-child(odd){
+            color: orange;
+        /*n - каждый элемент
+        2n - каждый второй елемент
+        2n6 - каждый второй елемент начиная с шестого
+        odd/even - одд непарный ивен парный
+        nth-last-child - то же самое только начиная от обратного списка*/
+        }
+        ul li:nth-child(odd){
+            color: orange;
+            /*n - каждый элемент
+            2n - каждый второй елемент
+            2n6 - каждый второй елемент начиная с шестого
+            odd/even - одд непарный ивен парный*/
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid commodi ea, eius et eveniet excepturi id ipsum itaque nihil, nostrum odio provident recusandae rerum sint sit soluta, veniam voluptatum!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur doloribus dolorum, eaque iusto molestiae tempore totam veritatis. Assumenda aut blanditiis iure minima nihil nisi quas totam unde. Aliquam, aliquid, debitis?</p>
+    <p>Cumque enim obcaecati voluptatem!</p>
+    <p>Optio saepe voluptas voluptates.</p>
+    <p>Ad dolor et sequi!</p>
+    <p>Consectetur odio repellendus similique.</p>
+    <p>Consectetur illum magni unde!</p>
+    <p>Animi ducimus esse quae.</p>
+    <span>Lorem.</span><span>Ipsa!</span><span>Ipsam?</span><span>Dolore.</span>
+</div>
+<ul>
+    <li>Lorem ipsum dolor.</li>
+    <li>Esse ipsam, vel.</li>
+    <li>Facilis, maiores quas?</li>
+    <li>Dicta, nihil nulla.</li>
+    <li>Cumque, quas sapiente?</li>
+    <li>Mollitia, quasi, tempora.</li>
+    <li>Perspiciatis, quisquam, rerum!</li>
+    <li>Eligendi, necessitatibus sint!</li>
+    <li>Qui, reprehenderit, temporibus.</li>
+    <li>Deleniti, ipsum, libero.</li>
+    <li>Quam quos, voluptatum.</li>
+    <li>Cum, esse, rerum?</li>
+    <li>Obcaecati, quam, quia.</li>
+    <li>Illo, mollitia odit.</li>
+    <li>Laudantium, rerum, voluptatibus!</li>
+</ul>
+</body>
+</html>

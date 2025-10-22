@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--КОМБИНАТОРНЫЕ СЕЛЕКТОРЫ-->
+    <title>Document</title>
+    <style>
+        h1+p{
+            color: green;
+        /*Следующий после h1 параграф*/
+        }
+        h1~p{
+            color: purple;
+            /*Все параграфы после определённого заголовка*/
+        }
+        div p{
+            color: blue;
+        }
+        div>p>span{
+            color: green;
+        /*Селектор > указывает что все дочерние спаны к диву, но тут конкретно дочерним к диву является параграф, а не спан. А дочерним к параграфу уже является спан*/
+        }
+        div>div>p{
+            color: red;
+        /*див в котором есть див в котором есть параграф, ему даём стиль*/
+        }
+    </style>
+</head>
+<body>
+<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid error molestias nobis.</h1>
+<p>Lorem ipsum dolor sit amet.</p>
+<p>Commodi labore magni quos reprehenderit?</p>
+<p>Autem earum in quis voluptates!</p>
+<p>Aut maxime perferendis perspiciatis similique.</p>
+<p>Accusantium debitis dolores non quas!</p>
+<div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Alias consequuntur nam placeat rerum.</p>
+    <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <p>Eligendi <span>error facilis quos</span> repellat.</p>
+    <p>Eaque quibusdam repellat saepe voluptas?</p>
+    <p>Aliquam animi praesentium rerum voluptas.</p>
+</div>
+
+</body>
+</html>

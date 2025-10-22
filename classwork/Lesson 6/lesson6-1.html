@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--ВЕС СЕЛЕКТОРОВ-->
+    <title>Document</title>
+    <style>
+/*
+1000 баллов - inline
+100 баллов - id
+10 баллов - class
+1 балл - tag
+Каждое обращение к селектору имеет своё количество баллов, они между собой суммируются
+
+
+*/
+body p.lorem{
+    color: purple;
+/*тут применяются этот тег потому что по сумме 12 баллов*/
+}
+p.text{
+    color:blue;
+/*тут 11 баллов, потому что обращение по тегу и классу 1+10*/
+}
+p{
+    color:pink;
+/*тут 1 бал, потому что обращение по тегу*/
+}
+p.lorem{
+    color: red;
+/*тут так же 11 баллов, но из-за того что он последний, применяются изменения именно последней стилизации если они равны по баллам*/
+}
+#pink{
+    color: hotpink;
+/*применяется потому что у него 100 баллов*/
+}
+section div p.text{
+    color: green;
+/*13 баллов - 3 тега 1 класс*/
+}
+
+    </style>
+</head>
+
+<body><section>
+    <div class="box"><p id="pink" class="lorem text orange">Lorem ipsum dolor sit amet, consectetur.</p></div>
+</section></body>
+</html>
